@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+  {% block content %}
+      <form action = "http://localhost:5000/uploader" method = "POST"
+         enctype = "multipart/form-data">
+         <input type = "file" name="files" multiple="true" />
+         <input type = "submit"/>
+      </form>
+    <br>
+    <h3><FONT COLOR=red> {{ mensagem }} </FONT></h3>
+    <br>
+{% endblock %}

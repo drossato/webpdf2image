@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %} - FlaskApp</title>
+    <style>
+        nav a {
+            color: #d64161;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor PDF/JPG para inclusão no SEI</h1>
+    <hr>
+    <br><br><br><br>
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+    <br>
+    <br><br><br>
+    <hr>
+    <footer>
+  <p>Atualizado em 10/10/2022 por Daniel Rossato</p>
+  <p><a href="mailto:danielrossato@professores.utfpr.edu.br">danielrossato@professores.utfpr.edu.br</a></p>
+</footer>
+</body>
+</html>
